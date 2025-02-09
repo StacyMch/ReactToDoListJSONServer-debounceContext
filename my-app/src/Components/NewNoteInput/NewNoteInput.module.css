@@ -1,0 +1,59 @@
+.addContainer {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.iconsContainer {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	height: fit-content;
+}
+
+.iconContainer {
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.absoluteIcon {
+	display: none;
+	position: absolute;
+	top: 6px;
+	right: 60px;
+	background-color: #ffffffe3;
+}
+
+.editBtn {
+	background: transparent;
+	border: none;
+	color: #9d3600;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.saveBtn {
+	background: transparent;
+	border: none;
+	color: #28a745;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.deleteBtn {
+	background: transparent;
+	border: none;
+	color: #dc3545;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.deleteBtn:hover,
+.saveBtn:hover,
+.editBtn:hover {
+	font-weight: bold;
+}

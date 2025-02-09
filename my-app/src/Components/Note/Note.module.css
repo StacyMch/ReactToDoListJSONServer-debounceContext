@@ -1,0 +1,100 @@
+li {
+	list-style-type: none;
+}
+.note {
+	position: relative;
+	background-color: #ccc;
+	width: 100%;
+	border-radius: 4px;
+	display: flex;
+	gap: 4px;
+	width: fit-content;
+	padding: 5px;
+}
+
+.note:hover .absoluteIcon {
+	display: block;
+}
+
+.completed {
+	color: #767676 !important;
+	text-decoration: line-through;
+	font-weight: normal;
+}
+
+textarea:disabled {
+	background-color: #ffffff;
+	color: black;
+}
+
+textarea::placeholder {
+	font-weight: normal;
+}
+
+textarea::-webkit-scrollbar {
+	width: 4px;
+	background-color: #7575ff;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: #d9d9d9;
+}
+
+textarea::-webkit-scrollbar-track {
+	-webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+	background-color: #f9f9fd;
+}
+
+.iconsContainer {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	height: fit-content;
+}
+
+.iconContainer {
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.absoluteIcon {
+	display: none;
+	position: absolute;
+	top: 6px;
+	right: 60px;
+	background-color: #ffffffe3;
+}
+
+.editBtn {
+	background: transparent;
+	border: none;
+	color: #9d3600;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.saveBtn {
+	background: transparent;
+	border: none;
+	color: #28a745;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.deleteBtn {
+	background: transparent;
+	border: none;
+	color: #dc3545;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.deleteBtn:hover,
+.saveBtn:hover,
+.editBtn:hover {
+	font-weight: bold;
+}
